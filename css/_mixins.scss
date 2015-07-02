@@ -1,0 +1,11 @@
+$font-family: ;
+$color-theme: ;
+$logo-size: ;
+$window-mobile-max: 500px;
+$window-desktop-min: 501px;
+
+
+@mixin logo-placement {
+  list-style: none;
+  vertical-align: center;
+}
