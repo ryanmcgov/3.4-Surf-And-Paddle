@@ -1,5 +1,6 @@
 $font-family: 'Oswald', sans-serif;
-$color-theme: rgba(0,100,200,0.6);
+$color-theme: #0B3551;
+$color-theme-light: #196FB1;
 $logo-size: 40px;
 $max-width: 100%;
 $window-mobile-max: 500px;
@@ -10,7 +11,7 @@ $window-desktop-min: 501px;
   display: block;
   list-style-type: none;
   text-align: center;
-  line-height: auto;
+  line-height: 21px;
   padding: 20px 0 0 0;
   margin: 0;
   img {

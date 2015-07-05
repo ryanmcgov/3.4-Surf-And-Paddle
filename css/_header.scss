@@ -4,8 +4,12 @@
     background: $color-theme;
     .title__logo {
       @include logo-placement;
-      li {
-
+      .blog__title {
+        color: #fff
+      }
+      .credit {
+        font-size: 12px;
+        color: $color-theme-light;
       }
     }
   }
@@ -23,7 +27,12 @@
         @include nav-mobile;
         margin: 0 15% 0 15%;
       }
+      a {
+        text-decoration: none;
+        color: #000;
+        line-height: 5px;
+        font-weight: 500;
+      }
     }
   }
-
 }
