@@ -1,0 +1,17 @@
+@media all and (max-width: $window-mobile-max) {
+  .surf__footer {
+    @include hf-dimensions-mobile;
+    bottom: 0;
+    background: $color-theme;
+    .title__logo {
+      @include logo-placement;
+    } 
+  }
+  .surf__footerNav {
+    margin: 0;
+    padding: 0;
+    .surf__footerNavList {
+      @include nav-mobile;
+    }
+  }
+}

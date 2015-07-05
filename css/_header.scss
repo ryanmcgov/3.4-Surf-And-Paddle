@@ -1,0 +1,23 @@
+@media all and (max-width: $window-mobile-max) {
+  .surf__header {
+    @include hf-dimensions-mobile;
+    background: $color-theme;
+    .title__logo {
+      @include logo-placement;
+      margin-top: 0;
+    }
+  }
+  .surf__headerNav {
+    margin: 0;
+    padding: 0;
+    > ul {
+      text-align: center;
+      padding: 0;
+      > li {
+        @include nav-mobile;
+        margin: 0 15% 0 15%;
+      }
+    }
+  }
+
+}

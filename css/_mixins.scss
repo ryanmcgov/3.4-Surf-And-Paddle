@@ -1,11 +1,34 @@
-$font-family: ;
-$color-theme: ;
-$logo-size: ;
+$font-family: 'Oswald', sans-serif;
+$color-theme: rgba(0,100,200,0.6);
+$logo-size: 40px;
+$max-width: 100%;
 $window-mobile-max: 500px;
 $window-desktop-min: 501px;
 
 
 @mixin logo-placement {
-  list-style: none;
-  vertical-align: center;
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@mixin hf-dimensions-mobile {
+  width: $max-width;
+  height: auto;
+  position: relative;
+}
+@mixin surf-content-mobile {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+}
+@mixin nav-mobile {
+  display: inline-block;
+  list-style-type: none;
 }

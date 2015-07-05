@@ -1,0 +1,5 @@
+@media all and (max-width: $window-mobile-max) {
+  .surf__content {
+    @include surf-content-mobile;
+  }
+}
