@@ -4,13 +4,19 @@
     background: $color-theme;
     .title__logo {
       @include logo-placement;
-      margin-top: 0;
+      li {
+
+      }
     }
   }
   .surf__headerNav {
     margin: 0;
     padding: 0;
+    background: url('../images/bb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
     > ul {
+      @include blue-overlay;
       text-align: center;
       padding: 0;
       > li {

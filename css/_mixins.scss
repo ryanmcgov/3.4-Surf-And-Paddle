@@ -10,7 +10,8 @@ $window-desktop-min: 501px;
   display: block;
   list-style-type: none;
   text-align: center;
-  padding: 0;
+  line-height: auto;
+  padding: 20px 0 0 0;
   margin: 0;
   img {
     height: 40px;
@@ -31,4 +32,9 @@ $window-desktop-min: 501px;
 @mixin nav-mobile {
   display: inline-block;
   list-style-type: none;
+}
+@mixin blue-overlay {
+  position: relative;
+  background: $color-theme;
+  opacity: 0.5;
 }
