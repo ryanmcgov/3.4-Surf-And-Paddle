@@ -40,6 +40,9 @@
       }
     }
   }
+  .big__title {
+    display: none;
+  }
 }
 @media all and (min-width: 901px) {
   .surf__header {
@@ -59,20 +62,44 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    .title__logo {
-      margin-top: 0; 
-      img {
-        height: 40px;
-        width: 40px;
+  }
+  .surf__headerNav {
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    right: 74px;
+    ul {
+      @include top-nav;
+      li {
+        margin: 0 2%;
       }
     }
   }
-  .surf__headerNav {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  .title__logo {
+    margin-top: 0;
+    padding-left: 5%; 
     li {
+      @include logo-placement;
       @include inline-block-list;
+    }
+    .credit {
+      display: none;
+    }
+  }
+  .big__title {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      margin-bottom: 0;
+      font-size: 72px;
+    }
+    span {
+      color: $color-theme;
     }
   }
 }
