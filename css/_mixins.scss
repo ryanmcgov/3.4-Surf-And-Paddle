@@ -30,7 +30,7 @@ $text-outline      : -1px -1px 0 #000,
 @mixin surf-content-mobile {
   position: relative;
   max-width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding-top: 20px;
 }
 @mixin post-title {
@@ -45,15 +45,36 @@ $text-outline      : -1px -1px 0 #000,
 @mixin block-list {
   display: block;
   list-style-type: none;
-  // text-align: center;
   padding: 0;
 }
 @mixin inline-block-list {
   display: inline-block;
   list-style-type: none;
 }
-@mixin related-pic {
+// @mixin related-pic {
+//   height: 220px;
+//   width: 100%;
+//   padding: 0;
+//   z-index: -1;
+// }
+@mixin blue-overlay ($picture){
   height: 220px;
   width: 100%;
   padding: 0;
+  background:
+  linear-gradient(
+    rgba(11, 53, 113, .70),
+    rgba(11, 53, 113, .70)
+    ),
+    url($picture);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@mixin related-span {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  color: #fff;
+  text-shadow: $text-outline;
 }

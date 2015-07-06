@@ -86,7 +86,7 @@ body {
   .surf__content {
     position: relative;
     max-width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     padding-top: 20px;
     letter-spacing: -1px; }
     .surf__content p {
@@ -128,27 +128,66 @@ body {
   .sidebar {
     display: none; }
 
+  .surf__contentPopular span {
+    color: #0B3551; }
   .surf__contentPopular ul {
     display: block;
     list-style-type: none;
     padding: 0; }
-    .surf__contentPopular ul li span {
-      position: relative;
-      top: 200px;
-      left: 10px;
-      color: #fff;
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-    .surf__contentPopular ul li img {
+    .surf__contentPopular ul .related1 {
       height: 220px;
       width: 100%;
-      padding: 0; }
+      padding: 0;
+      background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/related1.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .surf__contentPopular ul .related2 {
+      height: 220px;
+      width: 100%;
+      padding: 0;
+      background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/related2.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .surf__contentPopular ul .related3 {
+      height: 220px;
+      width: 100%;
+      padding: 0;
+      background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/related3.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .surf__contentPopular ul .related4 {
+      height: 220px;
+      width: 100%;
+      padding: 0;
+      background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/related4.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .surf__contentPopular ul li {
+      margin-bottom: 10px; }
+      .surf__contentPopular ul li:hover {
+        background: linear-gradient(rgba(11, 53, 113, 0), rgba(11, 53, 113, 0)); }
+      .surf__contentPopular ul li span {
+        position: relative;
+        top: 175px;
+        left: 10px;
+        color: #fff; }
 
-  .ad__space img {
-    height: auto;
-    width: 100%; }
-  .ad__space span {
-    position: relative;
-    left: 219px; }
+  .ad__space {
+    height: 220px;
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/ad.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto; }
+    .ad__space span {
+      position: relative;
+      left: 219px; }
 
   .surf_contentShare {
     position: absolute;
