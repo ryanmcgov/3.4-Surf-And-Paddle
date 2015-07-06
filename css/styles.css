@@ -8,7 +8,7 @@ html {
 
 html,
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, Helvetica, Helvetica Neue, Arial;
   font-size: 18px;
   line-height: 40px; }
 
@@ -22,12 +22,13 @@ body {
     position: relative;
     background: #0B3551; }
     .surf__header .title__logo {
-      display: block;
-      list-style-type: none;
       text-align: center;
       line-height: 21px;
       padding: 20px 0 0 0;
-      margin: 0; }
+      margin: 0;
+      display: block;
+      list-style-type: none;
+      padding: 0; }
       .surf__header .title__logo img {
         height: 40px;
         width: 40px; }
@@ -63,7 +64,60 @@ body {
     position: relative;
     max-width: 80%;
     margin: 0 auto 0 auto;
-    padding-top: 20px; } }
+    padding-top: 20px;
+    letter-spacing: -1px; }
+    .surf__content p {
+      line-height: 25px; }
+    .surf__content a {
+      color: #A3A3A3; }
+
+  .surf__contentTitle {
+    vertical-align: center; }
+    .surf__contentTitle > span {
+      color: #0B3551;
+      font-size: 56px; }
+
+  .quote {
+    color: #196FB1;
+    font-size: 22px; }
+
+  .author {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    text-align: center; }
+    .author img {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%; }
+    .author span {
+      color: #196FB1; }
+
+  .social__mediaList {
+    padding: 0; }
+    .social__mediaList li {
+      display: inline-block;
+      list-style-type: none; }
+    .social__mediaList a {
+      text-decoration: none; }
+
+  .sidebar {
+    display: none; }
+
+  .surf__contentPopular ul {
+    display: block;
+    list-style-type: none;
+    padding: 0; }
+    .surf__contentPopular ul li span {
+      position: relative;
+      top: 200px;
+      left: 10px;
+      color: #fff;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    .surf__contentPopular ul li img {
+      height: 220px;
+      width: 100%;
+      padding: 0; } }
 @media all and (max-width: 500px) {
   .surf__footer {
     width: 100%;
@@ -72,8 +126,6 @@ body {
     bottom: 0;
     background: #0B3551; }
     .surf__footer .title__logo {
-      display: block;
-      list-style-type: none;
       text-align: center;
       line-height: 21px;
       padding: 20px 0 0 0;

@@ -1,5 +1,61 @@
 @media all and (max-width: $window-mobile-max) {
   .surf__content {
     @include surf-content-mobile;
+    letter-spacing: -1px;
+    p {
+      line-height: 25px;
+    }
+    a {
+      color: $gray-theme;
+    }
+  }
+  .surf__contentTitle {
+    vertical-align: center;
+    > span {
+      @include post-title;
+    } 
+  }
+  .quote {
+    color: $color-theme-light;
+    font-size: 22px;
+  }
+  .author {
+    @include block-list;
+    text-align: center;
+    img {
+      @include profile-pic;
+    }
+    span {
+      color: $color-theme-light;
+    }
+  }
+  .social__mediaList {
+    padding: 0;
+    li {
+      @include inline-block-list;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+  .surf__contentPopular {
+    ul {
+      @include block-list;
+      li {
+        span {
+          position: relative;
+          top: 200px;
+          left: 10px;
+          color: #fff;
+          text-shadow: $text-outline;
+        }
+        img {
+          @include related-pic;
+        }
+      }
+    }
   }
 }

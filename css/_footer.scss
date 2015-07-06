@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     .surf__footerNavList {
-      @include nav-mobile;
+      @include inline-block-list;
     }
   }
 }
