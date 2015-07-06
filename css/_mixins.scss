@@ -4,8 +4,7 @@ $color-theme-light : #196FB1;
 $logo-size         : 40px;
 $title-font        : #196FB1;
 $max-width         : 100%;
-$window-mobile-max : 500px;
-$window-desktop-min: 501px;
+$window-mobile-max : 900px;
 $gray-theme        : #A3A3A3;
 $text-outline      : -1px -1px 0 #000,
                       1px -1px 0 #000,
@@ -33,11 +32,6 @@ $text-outline      : -1px -1px 0 #000,
   max-width: 80%;
   margin: 0 auto 0 auto;
   padding-top: 20px;
-}
-@mixin blue-overlay {
-  position: relative;
-  background: $color-theme;
-  opacity: 0.5;
 }
 @mixin post-title {
   color: $color-theme;
