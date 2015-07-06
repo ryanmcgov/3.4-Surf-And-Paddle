@@ -33,6 +33,7 @@
     padding: 0;
     li {
       @include inline-block-list;
+      margin: 0 5px 0 5px;
     }
     a {
       text-decoration: none;
@@ -54,6 +55,33 @@
         }
         img {
           @include related-pic;
+        }
+      }
+    }
+  }
+  .ad__space {
+    img {
+      height: auto;
+      width: 100%;
+    }
+    span {
+      position: relative;
+      left: 219px;
+    }
+  }
+  .surf_contentShare {
+    position: absolute;
+    top: 221px;
+    left: -28px;
+    ul {
+      @include block-list;
+      li {
+        height: 26px;
+        width: 26px;
+        margin-bottom: 3px;
+        img {
+          height: 26px;
+          width: 26px;
         }
       }
     }

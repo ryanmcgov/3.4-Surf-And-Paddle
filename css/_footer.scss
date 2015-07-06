@@ -3,15 +3,24 @@
     @include hf-dimensions-mobile;
     bottom: 0;
     background: $color-theme;
+    color: $gray-theme;
     .title__logo {
       @include logo-placement;
     } 
+    .footer__logo {
+      font-size: 15px;
+    }
   }
   .surf__footerNav {
-    margin: 0;
+    text-align: center;
+    margin: 0 10% 0 10%;
     padding: 0;
     .surf__footerNavList {
       @include inline-block-list;
+      a {
+        color: $gray-theme;
+        text-decoration: none;
+      }
     }
   }
 }
