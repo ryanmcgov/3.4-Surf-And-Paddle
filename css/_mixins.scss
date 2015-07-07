@@ -58,7 +58,7 @@ $text-outline      : -1px -1px 0 #000,
 }
 @mixin blue-overlay ($picture){
   height: 220px;
-  width: 25%;
+  width: auto;
   background:
   linear-gradient(
     rgba(11, 53, 113, .70),
