@@ -246,13 +246,14 @@ body {
   .surf__content {
     height: 100%;
     width: 100%;
-    margin-top: 10px;
     display: block; }
     .surf__content a {
       color: #A3A3A3; }
 
   .surf__contentInfo {
     display: inline-block;
+    position: relative;
+    height: auto;
     width: 50%;
     margin: 40px 5% 0 5%;
     letter-spacing: -1px; }
@@ -278,6 +279,37 @@ body {
       letter-spacing: -1;
       font-size: 13px;
       line-height: 16px; }
+    .surf__contentFiller .ad__space {
+      height: 220px;
+      width: auto;
+      background: linear-gradient(rgba(11, 53, 113, 0.7), rgba(11, 53, 113, 0.7)), url("../images/ad.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 350px; }
+      .surf__contentFiller .ad__space span {
+        position: relative;
+        left: 219px;
+        top: 340px; }
+    .surf__contentFiller .author {
+      display: block;
+      list-style-type: none;
+      padding: 0;
+      text-align: center; }
+      .surf__contentFiller .author img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%; }
+      .surf__contentFiller .author span {
+        color: #196FB1; }
+    .surf__contentFiller .social__mediaList {
+      padding: 0; }
+      .surf__contentFiller .social__mediaList li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 5px 0 5px; }
+      .surf__contentFiller .social__mediaList a {
+        text-decoration: none; }
 
   .surf__contentPopular {
     margin-top: 10px;
@@ -336,7 +368,17 @@ body {
           position: relative;
           top: 175px;
           left: 10px;
-          color: #fff; } }
+          color: #fff; }
+
+  .surf_contentShare ul li {
+    display: inline-block;
+    list-style-type: none;
+    height: 26px;
+    width: 26px;
+    margin-bottom: 3px; }
+    .surf_contentShare ul li img {
+      height: 26px;
+      width: 26px; } }
 @media all and (max-width: 900px) {
   .surf__footer {
     width: 100%;
@@ -369,10 +411,41 @@ body {
 @media all and (min-width: 901px) {
   .surf__footer {
     position: relative;
+    display: block;
     top: 0;
-    left: 0; }
+    left: 0;
+    background: #0B3551;
+    height: 5%;
+    width: 100%;
+    font-size: 15px;
+    color: #A3A3A3; }
     .surf__footer img {
       height: 40px;
-      width: 40px; } }
+      width: 40px; }
+    .surf__footer .title__logo {
+      position: relative;
+      top: 50%;
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 0; }
+    .surf__footer nav {
+      position: absolute;
+      top: 45%;
+      left: 70%;
+      width: 30%;
+      margin-right: 0;
+      margin-left: 0; }
+
+  .surf__footerNav {
+    text-align: center;
+    margin: 0 10% 0 10%;
+    padding: 0;
+    width: auto; }
+    .surf__footerNav .surf__footerNavList {
+      display: inline-block;
+      list-style-type: none; }
+      .surf__footerNav .surf__footerNavList a {
+        color: #A3A3A3;
+        text-decoration: none; } }
 
 /*# sourceMappingURL=styles.css.map */
